@@ -123,7 +123,8 @@ Execute Django admin and create details for 10 books
 ```
 # OUTPUT
 
-![alt text](<Screenshot 2024-12-08 225059.png>)
+![image](https://github.com/user-attachments/assets/b1257faa-07ed-40e7-a653-4a48d28f6c1c)
+
 
 
 # RESULT
