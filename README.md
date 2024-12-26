@@ -40,7 +40,8 @@ class EmployeeAdmin(admin.ModelAdmin):
 
 ![orm1](https://github.com/user-attachments/assets/e0be541b-cf35-42c9-b3f5-dde8400ea6d9)
 
-![orm2](https://github.com/user-attachments/assets/f9a82434-b049-437e-b3bf-c52093b29ad2)
+![orm2](https://github.com/user-attachments/assets/da06b728-b899-4bbc-8894-d9c8062c2aa2)
+
 
 
 
