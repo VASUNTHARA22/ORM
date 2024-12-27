@@ -5,9 +5,7 @@ To develop a Django application to store and retrieve data from a bank loan data
 
 # ENTITY RELATIONSHIP DIAGRAM
 
-![TITLE](https://github.com/user-attachments/assets/65312dc8-2443-48df-96ac-eeb8556353aa)
-
-
+![image](https://github.com/user-attachments/assets/240a9f48-df89-46ac-98f8-49714eb8919a)
 
 
 ## DESIGN STEPS
@@ -24,38 +22,33 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 # PROGRAM
-
-admin.py
-```
-   from django.contrib import admin
-   from .models import Employee,EmployeeAdmin
-   admin.site.register(Employee,EmployeeAdmin)
-```
 models.py
 ```
-  from django.db import models
-  from django.contrib import admin
-  class Employee (models.Model):
-    eid=models.IntegerField(primary_key=True)
-    name=models.CharField(max_length=100)
-    salary=models.IntegerField()
-    age=models.IntegerField()
+from django.db import models
+from django.contrib import admin
+class bankloan(models.Model):
+    customer_name=models.CharField(max_length=100,primary_key=True)
+    customer_id=models.CharField(max_length=100)
+    loan_no=models.IntegerField()
+    loan_amount=models.IntegerField()
     email=models.EmailField()
  
-class EmployeeAdmin(admin.ModelAdmin):
-    list_display=('eid','name','salary','age','email')
+class userAdmin(admin.ModelAdmin):
+    list_display=('customer_name','customer_id','loan_no','loan_amount','email')
+# Create your models here.
+```
+admin.py
+```
+from django.contrib import admin
+from .models import bankloan,userAdmin
+admin.site.register(bankloan,userAdmin)
 ```
 
 # OUTPUT
 
-![orm1](https://github.com/user-attachments/assets/e0be541b-cf35-42c9-b3f5-dde8400ea6d9)
+![image](https://github.com/user-attachments/assets/6d4847fd-d5b9-4c91-bca9-3ba925345302)
 
-![orm2](https://github.com/user-attachments/assets/da06b728-b899-4bbc-8894-d9c8062c2aa2)
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/9e230503-d629-4536-beaf-090eb5237999)
 
 
 # RESULT
